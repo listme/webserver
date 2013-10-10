@@ -1,0 +1,9 @@
+{
+  "name": "webserver",
+  "version": "0.1.0",
+  "description": "static web server",
+  "main": "webserver.js",
+  "dependencies": {
+    "ecstatic": "*"
+  }
+}
