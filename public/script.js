@@ -2,11 +2,13 @@ var restify = function (el) {
     var item = document.getElementById('item'),
         content = document.getElementById('content');
 
-    ajax({
+    var conf = {
         method: el.innerText,
         url: '/item/' + item.value,
         data: content.value
-    }, alert, alert);
+    };
+    
+    ajax(conf, alert, alert);
 };
 
 var ajax = function (config, callback, fallback) {
